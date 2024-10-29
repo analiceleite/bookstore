@@ -46,6 +46,7 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+<<<<<<< HEAD
 name = "django-debug-toolbar"
 version = "4.4.6"
 description = "A configurable set of panels that display various debug information about the current request/response."
@@ -102,6 +103,8 @@ files = [
 django = ">=4.2"
 
 [[package]]
+=======
+>>>>>>> 25a3ad6cb6d102df02825fe55484b374361ca76e
 name = "factory-boy"
 version = "3.3.1"
 description = "A versatile test fixtures replacement based on thoughtbot's factory_bot for Ruby."
@@ -402,4 +405,9 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
+<<<<<<< HEAD
 content-hash = "58016bae29bd496752a61c17a36fc9e0fcaac5b92455306b2f4ac36a103ed99f"
+=======
+content-hash = "8f2ee709c0d43ce417c177a700a293182d64a586c57eb98bc6e9ef9f838c0409"
+
+>>>>>>> 25a3ad6cb6d102df02825fe55484b374361ca76e
