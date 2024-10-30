@@ -163,6 +163,6 @@ INTERNAL_IPS = [
 #DEBUG = int(os.environ.get("DEBUG", default=0))
 
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'analice-bookstore-api-00ba70aa8cac.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'analice-bookstore-api-00ba70aa8cac.herokuapp.com', 'Analice.pythonanywhere.com']
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
