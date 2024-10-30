@@ -11,6 +11,9 @@ files = [
     {file = "asgiref-3.8.1.tar.gz", hash = "sha256:c343bd80a0bec947a9860adb4c432ffa7db769836c64238fc34bdc3fec84d590"},
 ]
 
+[package.dependencies]
+typing-extensions = {version = ">=4", markers = "python_version < \"3.11\""}
+
 [package.extras]
 tests = ["mypy (>=0.800)", "pytest", "pytest-asyncio"]
 
@@ -100,6 +103,20 @@ files = [
 
 [package.dependencies]
 django = ">=3.0"
+
+[[package]]
+name = "exceptiongroup"
+version = "1.2.2"
+description = "Backport of PEP 654 (exception groups)"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "exceptiongroup-1.2.2-py3-none-any.whl", hash = "sha256:3111b9d131c238bec2f8f516e123e14ba243563fb135d3fe885990585aa7795b"},
+    {file = "exceptiongroup-1.2.2.tar.gz", hash = "sha256:47c2edf7c6738fafb49fd34290706d1a1a2f4d1c6df275526b62cbb4aa5393cc"},
+]
+
+[package.extras]
+test = ["pytest (>=6)"]
 
 [[package]]
 name = "factory-boy"
@@ -312,9 +329,11 @@ files = [
 
 [package.dependencies]
 colorama = {version = "*", markers = "sys_platform == \"win32\""}
+exceptiongroup = {version = ">=1.0.0rc8", markers = "python_version < \"3.11\""}
 iniconfig = "*"
 packaging = "*"
 pluggy = ">=1.5,<2"
+tomli = {version = ">=1", markers = "python_version < \"3.11\""}
 
 [package.extras]
 dev = ["argcomplete", "attrs (>=19.2)", "hypothesis (>=3.56)", "mock", "pygments (>=2.7.2)", "requests", "setuptools", "xmlschema"]
@@ -402,6 +421,17 @@ dev = ["build", "hatch"]
 doc = ["sphinx"]
 
 [[package]]
+name = "tomli"
+version = "2.0.2"
+description = "A lil' TOML parser"
+optional = false
+python-versions = ">=3.8"
+files = [
+    {file = "tomli-2.0.2-py3-none-any.whl", hash = "sha256:2ebe24485c53d303f690b0ec092806a085f07af5a5aa1464f3931eec36caaa38"},
+    {file = "tomli-2.0.2.tar.gz", hash = "sha256:d46d457a85337051c36524bc5349dd91b1877838e2979ac5ced3e710ed8a60ed"},
+]
+
+[[package]]
 name = "typing-extensions"
 version = "4.12.2"
 description = "Backported and Experimental Type Hints for Python 3.8+"
@@ -414,13 +444,13 @@ files = [
 
 [[package]]
 name = "whitenoise"
-version = "6.8.1"
+version = "6.8.2"
 description = "Radically simplified static file serving for WSGI applications"
 optional = false
 python-versions = ">=3.9"
 files = [
-    {file = "whitenoise-6.8.1-py3-none-any.whl", hash = "sha256:196ba04ca0a80f4a3f99f88381864f218a28b5fb5b44d29feea484d501fa0ba3"},
-    {file = "whitenoise-6.8.1.tar.gz", hash = "sha256:11042f39f1dcfbb3814726b9364703af6901706582d988e96494cfefdc3a89e2"},
+    {file = "whitenoise-6.8.2-py3-none-any.whl", hash = "sha256:df12dce147a043d1956d81d288c6f0044147c6d2ab9726e5772ac50fb45d2280"},
+    {file = "whitenoise-6.8.2.tar.gz", hash = "sha256:486bd7267a375fa9650b136daaec156ac572971acc8bf99add90817a530dd1d4"},
 ]
 
 [package.extras]
@@ -428,5 +458,5 @@ brotli = ["brotli"]
 
 [metadata]
 lock-version = "2.0"
-python-versions = "^3.12"
-content-hash = "e419f67e6260055a74ceba8f7f21253a6bb9f4ea8c3630f01af984ed220cc87b"
+python-versions = "^3.10"
+content-hash = "f94331fc3591020f33da1fb790b3dcdf8c1e0b0dbebefcaf7c8d02546411e538"
